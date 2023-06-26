@@ -1,0 +1,17 @@
+name: Build a NodeJs Application
+on: push
+jobs:
+    build-jobs:
+        name: Build Node
+        runs-on: ubuntu-latest
+        container: node:14
+        steps:
+            - run: node --version
+              name: Node Version
+            - run: npm -- version
+              name: NPM Version
+            - run: npm install
+              name: Install NPM
+            - run: node app.js
+              name: Run Node App
+              
