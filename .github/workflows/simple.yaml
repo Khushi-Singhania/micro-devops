@@ -10,7 +10,7 @@ jobs:
               name: Node Version
             - run: npm -- version
               name: NPM Version
-            - run: npm install
+            - run: npm i --save moment
               name: Install NPM
             - run: node app.js
               name: Run Application
