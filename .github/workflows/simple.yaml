@@ -1,4 +1,4 @@
-name: Build a NodeJs Application
+name: Build Application
 on: push
 jobs:
     build-jobs:
